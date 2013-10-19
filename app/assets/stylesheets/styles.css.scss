@@ -1,0 +1,19 @@
+/*$navbarLinkBackgroundHover: #800000; */
+$btnPrimaryBackgroundHighlight: #800000;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a{
+		color: #800000;
+	}
+
+}
