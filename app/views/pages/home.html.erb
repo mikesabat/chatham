@@ -1,15 +1,19 @@
-<div class ='hero-unit'>
-	<h1>Welcome To Chatham</h1>
-	<p>
-		You've found the home page for our wedding pics.
-		Find the project on <%= link_to 'Github', 'https://github.com/mikesabat/chatham' %>
-	</p>
+<% if user_signed_in? %>
+	<h1>You're Logged In!</h1>
+<% else %>
 
-	<p>
-		
-		<%= link_to "Sign up Now", "#", class: 'btn btn-primary btn-large' %>
-		
-	</p>
-</div>
+	<div class ='hero-unit'>
+		<h1>Welcome To Chatham</h1>
+		<p>
+			You've found the home page for our wedding pics.
+			Find the project on <%= link_to 'Github', 'https://github.com/mikesabat/chatham' %>
+		</p>
 
+		<p>
+			
+			<%= link_to "Sign up Now", new_user_registration_path, class: 'btn btn-primary btn-large' %>
+			
+		</p>
+	</div>
 
+<% end %>
