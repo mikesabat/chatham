@@ -9,15 +9,6 @@ body {
 
 @import 'bootstrap-responsive';
 
-.footer {
-	margin-top: 50px;
-	color: $grayLight;
-	a{
-		color: #800000;
-	}
-
-}
-
 /* Required for JQuery Masonry */
 
 .box {
@@ -43,4 +34,15 @@ body {
 
 .description {
 	margin :10px 0 5px;
+}
+
+.footer {
+	margin-top: 50px;
+	position: fixed;
+	bottom: 0;
+	color: $grayLight;
+	a{
+		color: #800000;
+	}
+	
 }
